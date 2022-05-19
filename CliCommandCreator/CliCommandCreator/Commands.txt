@@ -1,0 +1,92 @@
+enable
+configure terminal
+interface *PARAM*
+reload
+hostname *PARAM*
+copy *PARAM|PARAM*
+write erase
+write memory
+write terminal
+erase *PARAM*
+ip address *IP|MASK*
+shutdown
+no shutdown
+ip default-gateway *IP*
+show running-config
+description *PARAM*
+show running-config *?PARAM|?PARAM*
+ip name-server *PARAM|PARAM*
+ping *PARAM|?PARAM*
+speed *PARAM*
+duplex full
+duplex auto
+duplex half
+cdp run 
+no cdp run
+show mac adress-table
+show cdp
+show cdp neighbors
+show ip interface *INT*
+show interfaces
+show interface status
+show interfaces switchport
+show interfaces trunk
+show vlan
+show vlan brief
+show vtp status
+ip route *INT|MASK|PARAM*
+router rip
+version 2
+no auto-summary
+passive-interface *PARAM*
+show ip rip database
+ip nat inside
+ip nat outside
+ip nat inside source *?PARAM*
+ip nat inside source static *IP|IP*
+vlan
+switchport access vlan
+switchport trunk encapsulation dot1q
+switchport access
+switchport mode access 
+switchport mode trunk
+encapsulation dot1q vlan-id
+ip address dhcp
+ip dhcp pool name
+domain-name *PARAM*
+network *PARAM|?MASK*
+ip dhcp excluded-address *IP|?IP* 
+ip helper-address *IP*
+default-router *IP|?IP|?IP|?IP|?IP|?IP|?IP|?IP*
+password *PARAM*
+username *PARAM|COMBO.password|PARAM*
+enable password *PARAM*
+enable secret *PARAM*
+service password-encryption
+ip domain-name *PARAM*
+crypto key generate rsa
+transport input telnet 
+transport input ssh
+access-list *INT|COMBO.deny.permit|IP|?IP|?COMBO.log*
+access-class
+ip access-list standard access-list-name 
+ip access-list standard access-list-number
+ip access-list extended access-list-name
+ip access-list extended access-list-number
+permit source *COMBO.source-wildcard*
+deny source *COMBO.source-wildcard*
+ntp peer *IP*
+switchport port-security
+switchport port-security maximum maximum
+switchport port-security
+mac-address mac-addr 
+mac-address sticky *COMBO.mac-addr*
+switchport port-security violation shutdown
+switchport port-security violation restrict
+switchport port-security violation protect
+show port security *?PARAM|?IP*
+logging *IP*
+logging trap level
+show logging
+terminal monitor
+switchport port-security maximum maximum

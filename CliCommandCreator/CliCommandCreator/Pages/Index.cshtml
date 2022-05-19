@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Cli command online converter</h1>
+    <p>Write your commands on the left side and then click the button in the middle</p>
+</div>
+
+<style>
+
+
+    .center {
+        position: relative;
+        top: 50%;
+        
+
+    }
+</style>
+
+
+<form method="post">
+    <div class="row " style="text-align:center">
+        <div class="col">
+            <textarea autofocus rows="20" class="container-fluid"  asp-for="BaseCmd"></textarea>
+        </div>
+        <div class="col-2" >
+            <input class="btn-info center form-control"   type="submit" value="Convert">
+        </div>
+        <div class="col">
+            
+            <textarea readonly rows="20" class="container-fluid" placeholder="Waiting for input" >@Model.FormattedCmd</textarea>
+        </div>
+    </div>
+</form>
+
